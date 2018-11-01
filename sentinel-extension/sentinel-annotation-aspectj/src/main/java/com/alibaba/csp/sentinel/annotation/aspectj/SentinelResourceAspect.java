@@ -38,8 +38,6 @@ import java.lang.reflect.Method;
 @Aspect
 public class SentinelResourceAspect extends AbstractSentinelAspect {
 
-    private final Logger logger = LoggerFactory.getLogger(SentinelResourceAspect.class);
-
     @Pointcut("@annotation(com.alibaba.csp.sentinel.annotation.SentinelResource)")
     public void sentinelResourceAnnotationPointcut() {
     }
